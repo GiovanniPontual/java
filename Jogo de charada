@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+	
+		
+	
+		System.out.println("O pai do padre é filho único do meu pai, o que o padre é meu?");
+		String a=sc.next();
+		
+		while (!a.equals("filho")){
+			System.out.println("Tente novamente");
+			a=sc.next();
+			
+			
+		
+		} System.out.println("Parabens você ACERTOU!!!");
+		
+		
+	sc.close();
+	
+	}
+
+	}
