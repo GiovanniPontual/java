@@ -1,0 +1,57 @@
+import java.util.Scanner;
+import java.util.Locale;
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+	
+		// Calculadora de moedas estrangeiras usando do - while + if
+		
+		int iene;
+		int dolar;
+		int euro;
+		int escolha;
+		double valoriene;
+		double valordolar;
+		double valoreuro;
+		double resposta=0;
+		
+		do {
+		System.out.println("Digite 1 (para iene), 2 (para dolar) , 3 (para euro)");
+		escolha =sc.nextInt();
+		
+		if(escolha == 1) {
+			System.out.println("Digite o valor em reais:");
+			iene=sc.nextInt();
+			valoriene=iene*4.60;
+			System.out.println(valoriene);
+			System.out.println("Deseja continuar ? s/n");
+			resposta=sc.nextDouble();
+		}
+		
+		if(escolha == 2) {
+			System.out.println("Digite o valor em reais:");
+			dolar=sc.nextInt();
+			valordolar=dolar*5.70;
+			System.out.println(valordolar);
+			System.out.println("Deseja continuar ? s/n");
+			resposta=sc.nextDouble();
+		}
+		
+		if(escolha == 3) {
+			System.out.println("Digite o valor em reais:");
+			euro=sc.nextInt();
+			valoreuro=euro*6.80;
+			System.out.println(valoreuro);
+			System.out.println("Deseja continuar ? s/n");
+			resposta=sc.nextDouble();
+		}
+
+		
+		} while(resposta==1);
+			
+	sc.close();
+		}
+		}
