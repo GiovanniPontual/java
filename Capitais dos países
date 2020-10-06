@@ -1,0 +1,55 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+
+public class Main {
+
+	
+	
+	
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		
+		
+		System.out.println("Digite um nome para saber a capital do seu país: ");
+		String pais=sc.nextLine();
+		
+		switch(pais) {
+		
+		case "Argentina":
+			System.out.println("Buenos aires");
+			break;
+		case "Paraguay":
+			System.out.println("Assunção");
+			break;
+		case "Brasil":
+			System.out.println("Brasilia");
+			break;
+		case "Chile":
+			System.out.println("Santiago");
+		break;
+
+		case "Bolivia":
+			System.out.println("La paz");
+			break;
+		case "Equador":
+			System.out.println("Quito");
+			break;
+		case "Uruguay":
+			System.out.println("Montevideo");
+		break;
+		
+		case "Colombia":
+			System.out.println("Bogotá");
+		break;
+		default :
+			System.out.println("Não existe");
+		}
+		
+		
+		sc.close();
+		
+	}
