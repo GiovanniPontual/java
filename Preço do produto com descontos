@@ -1,0 +1,23 @@
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite o preço do produto: ");
+		double preco_do_produto=sc.nextDouble();
+		
+		double desconto=(preco_do_produto>100)? preco_do_produto*0.20 :preco_do_produto*0.10; 
+		
+		double valor_total=preco_do_produto-desconto;
+		
+		System.out.println("Valor do produto com desconto: "+valor_total);
+		
+		sc.close();
+		
+	}}
