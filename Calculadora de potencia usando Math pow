@@ -1,0 +1,38 @@
+package application;
+
+import java.util.Scanner;
+
+
+
+public class Program {
+					
+	public static void main(String[] args) {
+				
+				
+				Scanner sc = new Scanner(System.in);
+				
+				//Faça um Programa que peça 2 números inteiros e um número real. Calcule e mostre:
+				//	o	o produto do dobro do primeiro com metade do segundo.
+				//	o	a soma do triplo do primeiro com o terceiro.
+				//	o	o terceiro elevado ao cubo.
+
+				
+				System.out.print("Digite o 1º número: ");
+				int num1=sc.nextInt();
+				System.out.print("Digite o 2º número: ");
+				int num2=sc.nextInt();
+				System.out.print("Digite o 3º número: ");
+				double num3 = sc.nextDouble();
+				
+				System.out.println();
+				System.out.println("o produto do dobro do primeiro com metade do segundo: "+(Math.pow(num1, 2) +num2/2));
+				System.out.println();
+				System.out.println("a soma do cubo do primeiro com o terceiro: "+(Math.pow(num1, 3) + num3));
+				System.out.println();
+				System.out.println("o terceiro elevado ao cubo: " +Math.pow(num3, 3));
+				sc.close();
+				
+			}
+			
+				
+}
